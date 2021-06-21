@@ -10,8 +10,8 @@
   <meta name="author" content="SitePoint">
 
   <link rel="stylesheet" href="dist/style.css">
-
-
+  <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+  <script src='https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js'></script>
 </head>
 
 <body>
@@ -21,7 +21,21 @@
       <img src="img/renpeters.png" alt="Ren Peters">
     </div>
     <div class="col align">
-      <div class="bottom">
+      <div class="js-info hidden bottom">
+        <h1>Ren Peters</h1>
+
+        <ul>
+          <li>Dit werkt enkel op je smartphone</li>
+          <li>Leg het geboortekaartje met de tekening naar boven plat op je tafel</li>
+          <li>Klik op link onderaan deze lijst</li>
+          <li>Geef toestemming voor het gebruik van je camera</li>
+          <li>Richt je camera naar het geboortekaartje</li>
+          <li>Houd de camera op een afstand van ongeveer 20cm</li>
+        </ul>
+
+        <a href="#" class="js-start-ar">Klik hier om verder te gaan</a>
+      </div>
+      <div class="bottom js-text">
         <h1>Ren Peters</h1>
 
         <p>Kind van <br>
@@ -34,21 +48,31 @@
         <p>Geboren op 22/06/2021 15:22</p>
 
         <p>
-          Kadeautje? <br>
-          <a href="https://app.pakske.be/lijst/geboortelijst-vincent-en-evel" target="_blank">Klik hier voor de geboortelijst</a>
+          Cadeautje? <br>
+          <a href="https://app.pakske.be/lijst/geboortelijst-vincent-en-evel" target="_blank">Klik hier voor de
+            geboortelijst</a>
         </p>
 
-        <p>Bezoekje brengen? <br> <br>
+        <p>Bezoekje brengen? <br>
           Welkom na berichtje! <br> Vincent 0474/915264 Evelyn 0478/456051<br>
           Prins leopoldstraat 6 bus 101, 2140 Borgerhout
         </p>
 
         <p>
-          <a href="#">Voeg een extra laag toe aan het geboortekaartje.</a>
+          <a href="#" class="js-show-info">Voeg een extra laag toe aan het geboortekaartje.</a>
         </p>
       </div>
     </div>
   </div>
+
+ 
+  <div class="ar">
+    
+  </div>
+ 
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  
   <script src="/dist/script.js"></script>
 
 </body>

@@ -67,5 +67,16 @@ body {
         bottom: $spacer;
         left: $spacer;
         right: $spacer;
+        transition: opacity .3s ease;
     }
+}
+
+.hidden{
+    opacity: 0;
+    pointer-events: none;
+}
+
+li{
+    list-style: disc;
+    margin-bottom: 1rem;
 }
