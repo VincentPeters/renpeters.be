@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'bast';
+    src: url('fonts/bast.woff2') format('woff2'),
+         url('fonts/bast.woff') format('woff');
+  }
+
+
+body{
+    color: $pink;
+    text-transform: uppercase;
+}
+
+a{
+    color: $pink;
+}
+
+h1{
+    font-family: 'bast', Fallback, sans-serif;
+    font-size: 5rem;
+}
+
+p{
+    margin-bottom: 1rem;
+}

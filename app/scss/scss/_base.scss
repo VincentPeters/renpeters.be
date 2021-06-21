@@ -1,0 +1,71 @@
+body {
+    background: url("../img/bg.png") center repeat;
+    font-size: 20px;
+}
+
+* {
+    box-sizing: border-box;
+  }
+
+.columns {
+    display: flex;
+}
+
+.col {
+    flex: 1;
+    height: 100vh;
+    padding: $spacer;
+    position: relative;
+}
+
+.ren .bg{
+    background: url("../img/renpeters.png") no-repeat center ;
+    background-size: contain;
+    position: absolute;
+    top: $spacer;
+    bottom: $spacer;
+    left: $spacer;
+    right: $spacer;
+}
+
+.ren {
+    img {
+        width: 100%;
+        display: none;
+    }
+}
+
+@media (max-width: 1000px) {
+    .columns {
+        display: block;
+    }
+
+    .col {
+        height: auto;
+    }
+
+    .ren {
+        .bg{
+            background: none;
+        }
+
+        img {
+            display: block;
+        }
+    }
+
+    .bottom{
+        position: relative !important;
+    }
+}
+
+.align{
+    position: relative;
+
+    .bottom{
+        position: absolute;
+        bottom: $spacer;
+        left: $spacer;
+        right: $spacer;
+    }
+}
