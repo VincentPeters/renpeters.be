@@ -8,6 +8,7 @@ $( document ).ready(function() {
 
   $('.js-start-ar').on('click', ()=>{
     $('.ar').addClass('show')
+    $('.js-kaartje').addClass('hidden')
     $( ".ar" ).load( "ar" );
   })
 });
