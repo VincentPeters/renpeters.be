@@ -22,7 +22,17 @@ h1{
 }
 
 p, 
-li{
+li,
+a{
     margin-bottom: 1.5rem;
     line-height: 1.4em;
+}
+
+a{
+    display: block;
+}
+
+ul{
+    padding-left: 2rem;
+    margin-bottom: 2rem;
 }
