@@ -8,7 +8,6 @@
 body{
     color: $pink;
     text-transform: uppercase;
-   
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -22,7 +21,8 @@ h1{
     margin-bottom: 4rem;
 }
 
-p{
+p, 
+li{
     margin-bottom: 1.5rem;
     line-height: 1.4em;
 }
