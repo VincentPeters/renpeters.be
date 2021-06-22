@@ -1,3 +1,5 @@
+require('js/favicon.js');
+
 
 $(document).ready(function () {
   $('.js-show-info').on('click', (e) => {
