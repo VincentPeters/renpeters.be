@@ -1,6 +1,5 @@
 body {
     background: url("../img/bg.png") center repeat;
-    font-size: 20px;
 }
 
 * {
@@ -90,4 +89,17 @@ body {
 li{
     list-style: disc;
     margin-bottom: 1rem;
+}
+
+.mute{
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: 20;
+
+    g{
+        fill: $pink
+    }
 }
