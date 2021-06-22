@@ -6,7 +6,8 @@ $(document).ready(function () {
     $('.js-info').removeClass('hidden');
   })
 
-  $('.js-start-ar').on('click', () => {
+  $('.js-start-ar').on('click', (e) => {
+    e.preventDefault();
     $('.ar').addClass('show')
     $('.js-kaartje').addClass('hidden')
     $(".ar").load("ar");

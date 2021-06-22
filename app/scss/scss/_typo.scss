@@ -16,6 +16,10 @@ body{
     }
 }
 
+small{
+    font-size: 50%;
+}
+
 a{
     color: $pink;
 }
@@ -33,12 +37,16 @@ h1{
 p, 
 li,
 a{
-    margin-bottom: 1.5rem;
     line-height: 1.4em;
 }
 
+p,
+li{
+    margin-bottom: 1.5rem;
+}
+
 a{
-    display: block;
+    display: inline-block;
 }
 
 ul{

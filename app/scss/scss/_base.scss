@@ -18,7 +18,7 @@ body {
 }
 
 .ren .bg{
-    background: url("../img/renpeters.png") no-repeat center ;
+    background: url("../img/transparent.png") no-repeat center ;
     background-size: contain;
     position: absolute;
     top: $spacer;
@@ -31,6 +31,7 @@ body {
     img {
         width: 100%;
         display: none;
+        padding: $spacer;
     }
 }
 
@@ -53,6 +54,7 @@ body {
 
     .col {
         height: auto;
+        padding: $spacer-m;
     }
 
     .ren {
@@ -67,16 +69,17 @@ body {
 
     .align .bottom{
         position: relative;
-        left: $spacer-m;
-        right: $spacer-m;
-        bottom: $spacer-m;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin-top: 0;
     }
 
     .js-info{
         position: absolute  !important;
-        left: $spacer-m + $spacer !important;
-        right: $spacer-m + $spacer !important;
-        bottom: $spacer-m + $spacer !important;
+        left: $spacer-m  !important;
+        right: $spacer-m  !important;
+        bottom: $spacer-m  !important;
 
     }
 }
