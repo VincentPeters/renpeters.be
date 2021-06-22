@@ -10,6 +10,8 @@ $(document).ready(function () {
     $('.ar').addClass('show')
     $('.js-kaartje').addClass('hidden')
     $(".ar").load("ar");
+
+    initAR()
   })
 
   var isPlaying = false;
@@ -36,4 +38,16 @@ $(document).ready(function () {
   audio.onpause = function () {
     isPlaying = false;
   };
+  
 });
+
+function initAR(){
+  AFRAME.registerComponent('markerhandler', {
+    init: function () {
+      this.el.sceneEl.addEventListener('markerFound', () => {
+        // redirect to custom URL
+        alert('test');
+      });
+  }
+  });
+}
