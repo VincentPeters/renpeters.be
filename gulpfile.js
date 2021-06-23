@@ -24,7 +24,8 @@ function jsTask(){
 function browsersyncServe(cb){
   browsersync.init({
     server: {
-      baseDir: '.'
+      baseDir: '.',
+      https: true
     }
   });
   cb();

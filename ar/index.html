@@ -1,11 +1,26 @@
 <a-scene debug vr-mode-ui="enabled: false;" renderer="logarithmicDepthBuffer: true;" embedded
-  arjs='trackingMethod: best; sourceType: webcam; debugUIEnabled: true;'>
+arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;">
 
-  <a-nft type='nft' url='./ar/NFT/renpeters' smooth="true" smoothCount="5" smoothTolerance=".01" smoothThreshold="2">
+  <a-nft 
+  markerhandler
+   type='nft' 
+   url='./ar/NFT/renpeters' 
+   smooth="true" smoothCount="5" smoothTolerance=".01" smoothThreshold="2">
+   
     <a-entity
-      gltf-model='./ar/GLFT/REN.glft'
-      scale="10 10 10" position="250 25 -400">
-    </a-entity>
+    gltf-model='./ar/GLFT/trex/scene.glft'
+    scale="10 10 10" position="250 25 -400">
+  </a-entity>
+   
+
+   <!--
+   <a-entity
+   gltf-model='./ar/GLFT/trex/scene.glft'
+   scale="10 10 10" 
+   position="250 25 -400"
+   >
+ </a-entity>  -->
+    
   </a-nft>
   <a-entity camera></a-entity>
 </a-scene>
