@@ -11,7 +11,7 @@ $(document).ready(function () {
     $('.js-kaartje').addClass('hidden')
     $(".ar").load("ar");
 
-    initAR()
+    initAR();
   })
 
   var isPlaying = false;
@@ -44,7 +44,7 @@ $(document).ready(function () {
 function initAR(){
   AFRAME.registerComponent('markerhandler', {
     init: function () {
-      this.el.sceneEl.addEventListener('markerFound', () => {
+      this.el.sceneEl.addEventListener('gps-entity-place-added', () => {
         // redirect to custom URL
         alert('test');
       });
