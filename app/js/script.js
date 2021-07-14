@@ -7,6 +7,7 @@ $(document).ready(function () {
 
   $('.js-start-ar').on('click', (e) => {
     e.preventDefault();
+    $(window).scrollTop(0);
     $('.ar').addClass('show')
     $('.js-kaartje').addClass('hidden')
     $(".ar").load("ar");
