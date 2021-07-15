@@ -20,6 +20,8 @@ $(document).ready(function () {
   const audio = document.getElementById("audio")
 
   $('*').click(function () {
+    $('.js-mute').removeClass('hidden');
+    
     if (first) {
       isPlaying = true;
       $('.js-mute').removeClass('hidden');
